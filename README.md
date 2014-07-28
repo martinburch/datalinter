@@ -12,7 +12,7 @@ We're inspired by the [csvlint.rb](https://github.com/theodi/csvlint.rb) project
 
 There's a tension between a simpler, "dumber" tool that is not type-aware (beyond, maybe, strings and numbers) and a more advanced tool that uses fancy type inference to distinguish different kinds of data to a SQL or better level of precision, e.g. datetimes, lat/longs, probabilities, percentages, addresses or humans' names.
 
-In the case of a simpler tool, output similar to the R `psych` package's describeBy method might be a good example, by highlighting summary statistics so that the user can apply their domain to know if the results make sense. For instance, if the max of a numeric column that the user knows represents latitudes is -3000, the user will be able to know quickly that there's a problem (without the tool having to "know" that there's a problem).
+In the case of a simpler tool, output similar to the R `psych` package's describeBy method might be a good example, by highlighting summary statistics so that the user can apply their domain to know if the results make sense. For instance, if the max of a numeric column that the user knows represents latitudes is -3000, the user will be able to know quickly that there's a problem (without the tool having to "know" that there's a problem). @onyxfish's [csvkit](https://github.com/onyxfish/csvkit)'s `csvstat` tool [provides similar info](https://csvkit.readthedocs.org/en/0.8.0/scripts/csvstat.html), implemented in Python.
 ````
 > describeBy(dataframe)
             vars   n     mean        sd median trimmed     mad min        max
