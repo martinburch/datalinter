@@ -36,3 +36,12 @@ want to help?
 contribute your ideas here in this readme or as an issue! (pull requests welcomed!)
 
 nothing in this README is canonical, so change it or add if you think I/we missed something or are wrong.
+
+
+related-ish cool things
+--------------------
+
+- https://github.com/setosa/csv-fingerprint
+- https://github.com/onyxfish/csvkit
+- https://github.com/theodi/csvlint.rb
+- http://cran.r-project.org/web/packages/psych/index.html
